@@ -1,0 +1,169 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/metropolis.min.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/BG.jpg');
+  color: white;
+  font-family: 'metropolis';
+  background-size: 100%;
+  background-size:cover;
+  overflow: hidden;
+}
+
+/* Header */
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: white;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
+
+/* Header ends here */
+
+h2 {
+    color: white;
+    font-family: 'Metropolis', sans-serif;
+    font-style: bold;
+    text-align: center;
+    font-size: 130px;
+    padding-top: 130px;
+}
+
+.message {
+    color: white;
+    text-align: center;
+    font-family: 'metropolis';
+    font-size: 38px;
+    font-style: 'regular';
+    letter-spacing: -0.4%;
+    line-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18em
+}
+
+.flags {
+    float: left;
+    padding: 5px;
+    width: 200px;
+    color: white;
+    font-family: 'Metropolis';
+    font-style: italic;
+    text-align: center;
+}
+
+.flag-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:200px;
+
+}
+.select {
+    color: white;
+    text-align: center;
+    font-family: 'metropolis';
+    font-size: 25px;
+    letter-spacing: -0.4%;
+}
