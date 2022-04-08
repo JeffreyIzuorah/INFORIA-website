@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="style/health.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/metropolis.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="js/Health.js"defer></script>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+</head>
+<body>
+
+        <!-- HEADER/NAV LINKS -->
+        <div class="header-container" style="--backgroundimage: url('/assets/Nigeria.jpg')" >
+            <header id="myHeader">
+                <div id="brand"><a href="Homepage.html">Inforia</a></div>
+                <nav>
+                  <ul>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                     
+                  </ul>
+                </nav>
+                <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                  <ul class="mobile-menu">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                     
+                  </ul>
+                </div>
+              </header>
+        <!-- <h2>Nigeria</h2> -->
+  
+    <h2 class="nigeriaTitle">Nigeria</h2>
+    <div class="icons">
+            <span class="iconify" data-icon="medical-icon:i-health-services" style="color: white;" data-width="106" data-height="90"></span>
+    <p style="color: white;">Health</p>
+        </a>
+    </div>
+</div>
+
+      <!-- Health category -->
+      <div class="health">
+    
+        
+        <!-- COVID 19 data -->
+      <div class="textCenterTitle">Latest COVID 19 statistics</div>
+      <div class="APIContainer">
+        <div class="covidInput">
+          <p>Select a country:</p>
+          <select class="form-control" id="countries">
+            <option>Select a country</option>
+          </select>
+        </div>
+        <hr class="mySeparator">
+        <div class="text-center">
+          <p class="marginTopBottom" id="covidNewConfirmed">New confirmed cases: /</p>
+          <p class="marginTopBottom" id="covidTotalConfirmed">Total confirmed cases: /</p>
+          <p class="marginTopBottom" id="covidNewDeaths">New deaths: /</p>
+          <p class="marginTopBottom" id="covidTotalDeaths">Total deaths: /</p>
+          <p class="marginTopBottom" id="covidLastUpdate">Last updated: /</p>
+        </div>
+      </div>
+      </div>
+    
+    <!-- COVID 19 DATA ENDS HERE -->
+
+    <iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&time=earliest..2022-04-07&region=Africa&facet=none&hideControls=true&Metric=Confirmed+cases&Interval=Cumulative&Relative+to+Population=false&Color+by+test+positivity=false&country=~NGA" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+              <!--==================== FOOTER ====================-->
+              <footer>
+                <div class="footer-content">
+                    <h3>Inforia</h3>
+                    <p>Inforia is the one stop shop for all travel information. Here each tutorial is beautifully described step by step with the required source code.</p>
+                    <ul class="socials">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p>copyright &copy; <a href="#">Izuorah Jeffrey</a>  </p>
+                            <div class="footer-menu">
+                              <ul class="f-menu">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li><a href="">Blog</a></li>
+                              </ul>
+                            </div>
+                </div>
+        
+            </footer> 
+
+</body>
+
+
+
