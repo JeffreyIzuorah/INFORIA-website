@@ -1,3 +1,3 @@
-$(".btn").click(function(){
-    $(".input, .area").val("");
-  });
+// $(".btn").click(function(){
+//     $(".input, .area").val("");
+//   });

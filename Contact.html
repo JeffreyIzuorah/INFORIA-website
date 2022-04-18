@@ -28,21 +28,24 @@
         </div>
       </header>
 
+
+      <form class="form elevate-hover scale-in" method="POST" action="insert.php">
       <div class="container">
         <p>CONTACT US</p>
         
         <div class="subject">
-          <input type="email" placeholder="Email" class="input">
+          <input type="email" placeholder="Email" class="input" name="email">
         </div>
         
         <div class="msg">
-          <textarea  class="area" placeholder="Leave a Message"></textarea>
+          <textarea  class="area" placeholder="Leave a Message" name="msg"></textarea>
         </div>
         
-        <div class="btn">Send Message</div>
+        <button class="btn">Send Message</button>
       </div>
+      </form>
     
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="/js/Contact.js"></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="js/Contact.js"></script>
 
 </body>
 </html>

@@ -343,4 +343,13 @@ footer{
   margin-top: 10px;
   margin-bottom: 20px;
   }
+  h2.nigeriaTitle {
+    font-size: 50px;
+  }
+
+  .big-container {
+    width: 300px;
+    height: 250px;
+    font-size: 17px;
+  }
   }
